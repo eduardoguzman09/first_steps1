@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Redirect;
 
 class NotesController extends Controller
 {
+    
     public function index()
     {
  			$notes=Note::all();
@@ -24,7 +25,7 @@ class NotesController extends Controller
     {
     	$this->validate(request(),[
     		
-    		'note'=>['required','max:20']
+    		'note'=>['required','max:200']
 
     		]);
     	$data=request()->all();
@@ -38,5 +39,9 @@ class NotesController extends Controller
     public function images()
     {
         return view('notes/objectnote');
+    }
+    public function nosotros()
+    {
+        return view('notes/nosotros');
     }
 }

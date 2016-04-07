@@ -1,0 +1,25 @@
+
+		 body{
+    margin:60px;
+  }
+
+		ul{
+			list-style: none;
+		}
+		.divcl{
+			border:solid;
+						background-color: #FFB533;
+			padding-bottom: 5px;
+			width: 30%;
+			margin: 0.5%;
+			text-align: left;
+		}
+		.a{
+		width: 30%;
+		margin: 0.5%;
+		}
+/* show the move cursor as the user moves the mouse over the panel header.*/
+    #draggablePanelList .panel-heading {
+        cursor: move;
+    }
+     #draggable { width: 150px; height: 150px; padding: 0.5em; }

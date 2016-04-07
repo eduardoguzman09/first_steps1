@@ -1,6 +1,7 @@
 <?php
 
 use App\Note;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -28,3 +29,4 @@ route::get ('notes/create','NotesController@create');
 
 route::get('notes/{note}','NotesController@show')->where('note','[0-9]+');
 route::get('notes/objectnote','NotesController@images');
+route::get('notes/nosotros','NotesController@nosotros');

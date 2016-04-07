@@ -1,40 +1,60 @@
+
 @extends('layout')
 
-	<style type="text/css">
 	
-		ul{
-			list-style: none;
-		}
-		.divcl{
-			border:solid;margin-top: 30px;background-color: #FFB533;padding-bottom: 5px;
-		}
-	</style>
 
+
+
+
+	
 @section('content')
-	<div  class="divcl">
-		<center><h2>Notes</h2>
-			<a href="/notes/create">Add note</a>
-			<a href="/notes/objectnote">move images</a>
-			<ul>
-				@foreach($notes as $note)
-					<li>
-						{{$note->note}}
-					</li>
-				@endforeach
-			</ul>
+
+<script>
+	var page="home";
+</script>
+	<div class="container-fluid ">
+		<div  class="divcl  col-lg-4">
+			<h2>Notes</h2>
+				<a href="/notes/create" class="a">Add note</a>
+			
+				<ul>
+					@foreach($notes as $note)
+						<li>
+							{{$note->note}}
+						</li>
+					@endforeach
+				</ul>
+
+		</div>
+		<div class=" a  col-lg-4" style="background-color: red;">
+			<button class="btn btn-success">clik here</button>
+		</div>
 
 
+<div class="a  col-lg-4"style="background-color: blue;" >
+			<img src="/images/m.gif" id="draggable" width="70px" height="70px">
+			<img src="/images/celular1.png" id="draggable2"width="70px" height="70px">
 
+			<img src="/images/celular2.jpg" id="draggable3" width="70px" height="70px">
 
-		<!--<form method="post" type="">
-			{!! csrf_field()!!}
-	<!--<input type="text" name="_token" value="{{csrf_token()}}"></input>-->
-			<!--<textarea>
-			</textarea>
-			<button type="submit">
-				Create note
-			</button>
-		</form>-->
-		</center>
+			<img src="/images/celular3.png" id="draggable4" width="70px" height="70px">
+			</div>
+
+		
 	</div>
+
+
 	@endsection
+
+
+
+
+
+	
+
+
+
+
+
+
+	
