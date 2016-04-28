@@ -23,3 +23,5 @@
         cursor: move;
     }
      #draggable { width: 150px; height: 150px; padding: 0.5em; }
+
+     .table{}
